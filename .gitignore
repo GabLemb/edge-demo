@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+
+# Database SQLite (storage runtime di Myrmic mock)
+*.db
+*.db-journal
+
+# ROS2 / colcon artifacts (se mai metterai il workspace dentro)
+build/
+install/
+log/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output runtime
+*.bag
+rosbag2_*/
+EOF
