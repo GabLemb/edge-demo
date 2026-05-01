@@ -13,6 +13,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'worlds'), glob('worlds/*.world')),
+        (os.path.join('share', package_name, 'maps'), glob('maps/*')),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -26,6 +28,7 @@ setup(
             'target_mover = swarm_arena.target_mover_node:main',
             'target_tracker = swarm_arena.target_tracker_node:main',
             'data_layer = swarm_arena.data_layer_node:main',
+            'auto_explorer = swarm_arena.auto_explorer_node:main',
         ],
     },
 )
